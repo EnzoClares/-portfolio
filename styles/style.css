@@ -14,6 +14,7 @@
 *{
     margin: 0;
     padding: 0;
+    
  }
  
 .apresentacao{
@@ -21,6 +22,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
+    gap: 82px;
 }
 
 .apresentacao__curriculo{
@@ -28,6 +30,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
+    gap: 82px;
 }
 
  body{
@@ -35,6 +38,7 @@
     box-sizing: border-box; /*mander conteúdo sempre dentro do body*/
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
+    overflow-x: hidden;
     
  }
 
@@ -83,7 +87,7 @@
     color: var(--cor-terciaria);
 }
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1,5rem;
     font-family: var(--fonte--secundaria);
     font-weight: 400;
 }
@@ -135,9 +139,88 @@
     color: var(--cor-principal);
     text-align: center;
     padding: 24px;
+   
 }
 
 .apresentacao__imagem{
     width: 50%;
+}
+
+@media(max-width: 1450px ){
+    .apresentacao__conteudo__titulo{
+        font-size: 2rem; 
+    }
+
+    .apresentacao__conteudo__texto{
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__links__subtitulo{
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__links__link{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media(max-width: 1200px){
+    .apresentacao{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+        
+    }
+
+    .cabecalho{
+        padding: 6% 0% 0% 0%;
+    }
+
+    .apresentacao__conteudo__titulo{
+        text-align: center;
+    }
+
+    .apresentacao__conteudo__texto{
+        text-align: center;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+        height: auto;
+        
+    }
+
+    .rodape{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 850px){
+    .apresentacao__conteudo__titulo{
+        font-size: 1.5rem; 
+    }
+
+    .apresentacao__conteudo__texto{
+        font-size: 1.1rem;
+    }
+
+    .apresentacao__links__subtitulo{
+        font-size: 1.1rem;
+    }
+
+    .apresentacao__links__link{
+        font-size: 1rem;
+    }
+
+    .rodape{
+        font-size: 1rem;
+        padding: 0% 0% 15% 0%;
+    }
+
 }
 
